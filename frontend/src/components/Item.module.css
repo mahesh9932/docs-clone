@@ -1,0 +1,18 @@
+.list-item {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+  flex-basis: 90%;
+}
+
+.list-item a {
+  color: black;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.list-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

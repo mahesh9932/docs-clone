@@ -1,0 +1,21 @@
+.logo {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  border: 1px solid black;
+  padding: 5px 10px;
+  right: 0;
+  top: 43px;
+  border-radius: 10px;
+}
+.dropdown:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

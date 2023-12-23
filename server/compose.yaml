@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - PGDATA=/var/lib/postgresql/data/PGDATA
+      - POSTGRES_PASSWORD=Chitti@143
+      - POSTGRES_DB=docs
+  docs-backend:
+    build: .
+    ports:
+      - 3001:3001
+    depends_on:
+      - postgres
+volumes:
+  pgdata:
