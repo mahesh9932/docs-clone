@@ -26,7 +26,7 @@ function App() {
 
   //intializing the socket
   useEffect(() => {
-    const socket = io("http://localhost:3001");
+    const socket = io(import.meta.env.VITE_BACKEND_URL);
     setSocket(socket);
     socket.emit("join-room", documentId);
     return () => socket.disconnect();

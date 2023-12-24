@@ -46,7 +46,7 @@ const RootLayout = (props) => {
 
         const templateParams = {
           from_name: user.name || "Docs",
-          link: "http://127.0.0.1:5173" + location.pathname,
+          link: window.location.href,
           to_email: val,
         };
 
