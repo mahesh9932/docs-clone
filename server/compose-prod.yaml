@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=Chitti@143
       - POSTGRES_DB=docs
   docs-backend:
-    build: .
+    image: mahesh9932/docs-backend
     ports:
       - 3001:3001
     depends_on:
